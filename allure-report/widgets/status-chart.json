@@ -1,0 +1,1 @@
+[{"uid":"857a65c1fc6a81eb","name":"Capture the search result","time":{"start":1718761102129,"stop":1718761103253,"duration":1124},"status":"failed","severity":"normal"},{"uid":"eb36bd7be6d6350","name":"Search for a keyword on Bing","time":{"start":1718761098512,"stop":1718761102128,"duration":3616},"status":"passed","severity":"normal"}]

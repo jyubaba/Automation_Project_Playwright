@@ -1,0 +1,29 @@
+{
+  "name": "playwright_automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:clear": "rm -rf allure-results && rm -rf allure-report && rm -rf test-results",
+    "pretest": "npm run allure:clear",
+    "posttest": "npm run allure:report",
+    "showAllureReport": "npx allure serve allure-results",
+    "showHTMLReport": "npx playwright show-report",
+    "googleSearchTest": "npx playwright test src/test/Playwright_Day1_060424/GoogleSearch.spec.ts --headed --project=chrome --project=safari --workers=1 --reporter=line,allure-playwright",
+    "playwrightAI1": "npx playwright test src/test/AI/Playwright_1.spec.ts --headed --project=chrome --project=firefox --workers=2 --reporter=html",
+    "uspsMouseTest": "npx playwright test src/test/Playwright_Day2_061024/T1_MouseActions.spec.ts --headed --project=chrome --workers=1 --reporter=html",
+    "googleSearchLoop": "npx playwright test src/test/Playwright_Day2_061024/T2_GoogleSearch_Loop.spec.ts --headed --project=chrome --workers=1 --reporter=html",
+    "bingSearch": "npx playwright test src/test/Playwright_Day3_061124/BingSearch_Reusable.spec.ts --headed --project=chrome --workers=1 --reporter=line,allure-playwright",
+    "playwrightAI2": "npx playwright test src/test/AI/Playwright_2.spec.ts --headed --project=chrome --workers=1 --reporter=html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.12.13",
+    "allure-commandline": "^2.29.0",
+    "allure-playwright": "^3.0.0-beta.3"
+  }
+}

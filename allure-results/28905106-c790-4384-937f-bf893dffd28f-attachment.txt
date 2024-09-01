@@ -1,0 +1,3 @@
+Navigating to https://www.bing.com/
+Entering keyword(s) on Search Field
+Pressing enter
